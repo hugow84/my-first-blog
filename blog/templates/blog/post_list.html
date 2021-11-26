@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+        <div class="grid-container">
+           
+            {% for a in Animals %}
+            <div class=case >
+        
+                <img src= "{{a.photo}}"  width="120" height="140" />
+                <h2><a href="{% url 'animal_detail' id_animal=a.id_animal %}" style="color:#005a35">{{ a.id_animal }}</a></h2>
+                <h3 class=description> État :</h3>
+                <p class=description> {{a.etat}} </p>
+
+            </div>
+         
+            {% endfor %}
+            {% for e in Equipements %}
+            <div class=case>
+
+                <img src= "{{e.photo}}"  width="120" height="140" />
+                <h2><a href="" style="color:#005a35">{{ e.id_equip }}</a></h2>
+                <h3 class=description> Disponibilité :</h3>
+                <p class=description> {{e.disponibilite}} </p>
+            </div>
+            {% endfor %}
+        </div>
+    {% endblock %}

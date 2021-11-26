@@ -1,0 +1,43 @@
+
+$
+ 
+<html>
+    <head>
+        <title>L'Animalerie</title>
+
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+
+       
+        
+    </head>
+    <body>
+        <div class="page-header">
+            <h1>L'Animalerie</a></h1>
+        </div>
+        <div class="grid-container">
+           
+            {% for a in Animals %}
+            <div class=case >
+        
+                <img src= "{{a.photo}}"  width="125" height="150" />
+                <h2><a href="" style="color:#005a35"  >  {{a.id_animal}} </a></h2>
+                <h3 class=description> État :</h3>
+                <p class=description> {{a.etat}} </p>
+
+            </div>
+         
+            {% endfor %}
+            {% for e in Equipements %}
+            <div class=case>
+
+                <img src= "{{e.photo}}"  width="125" height="150" />
+                <h2><a href="" style="color:#005a35">{{ e.id_equip }}</a></h2>
+                <h3 class=description> Disponibilité :</h3>
+                <p class=description> {{e.disponibilite}} </p>
+            </div>
+            {% endfor %}
+
+        </div>
+   </body>
+</html>

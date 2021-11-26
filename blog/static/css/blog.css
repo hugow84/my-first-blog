@@ -1,0 +1,56 @@
+
+
+
+
+ body{ font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    
+        
+    background-image: url('../images/fond1.jpg');}
+ 
+ .page-header{
+     background-color: #814d08;
+     color: rgb(255, 255, 255);
+     margin-top: 0;
+     padding: 20px 20px 20px 40px;
+     margin-bottom: 50px;
+     text-align: center;
+     border: 4mm ridge;
+     
+      
+   
+ }
+ 
+ 
+ 
+ 
+ 
+ .grid-container{
+    margin:30px;
+     
+     display: grid ;
+     grid-template-columns: repeat( auto-fit, minmax(20%, 1fr) );
+     padding:10px;
+     
+     
+ 
+     
+     
+ 
+ 
+ }
+ 
+ 
+ 
+ .case{background-color: rgba(199, 198, 198, 0.788);
+       color: rgba(211, 204, 204, 0.815);
+       text-align: center;
+       margin:  30px;
+        padding: 20px;
+    border: solid;
+
+     }
+
+
+   
+
+    .description{ color:rgba(2, 0, 0, 0.521);}
